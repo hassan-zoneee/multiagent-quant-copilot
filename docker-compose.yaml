@@ -1,0 +1,17 @@
+services:
+  db:
+    image: pgvector/pgvector:pg19-trixie
+    container_name: copilot-db
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql
+    mem_limit: 512m
+    restart: unless-stopped
+
+volumes:
+  pgdata:

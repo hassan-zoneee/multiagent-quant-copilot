@@ -2,3 +2,8 @@ ollama
 pytest
 ruff
 pre-commit
+fastapi
+uvicorn
+psycopg[binary]
+pydantic-settings
+httpx2
