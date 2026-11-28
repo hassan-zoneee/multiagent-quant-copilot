@@ -7,3 +7,11 @@ uvicorn
 psycopg[binary]
 pydantic-settings
 httpx2
+pymupdf
+pdfplumber
+python-docx
+pytesseract
+beautifulsoup4
+lxml
+pillow
+requests

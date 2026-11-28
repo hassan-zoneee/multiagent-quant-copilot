@@ -12,6 +12,8 @@ class Settings(BaseSettings):
     postgres_host: str = "localhost"
     postgres_port: int = 5432
 
+    sec_user_agent: str = ""
+
 
 @lru_cache
 def get_settings() -> Settings:
